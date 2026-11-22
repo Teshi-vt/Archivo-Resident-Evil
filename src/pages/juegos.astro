@@ -1,0 +1,150 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/default.astro'
+import Re1 from '../assets/img/re1.jpg'
+import Re2 from '../assets/img/re2.jpg'
+import Re3 from '../assets/img/re3.jpg'
+import Re4 from '../assets/img/re4.jpg'
+import Re5 from '../assets/img/re5.jpg'
+import Re6 from '../assets/img/re6.jpg'
+import Re7 from '../assets/img/re7.jpg'
+import Village from '../assets/img/Village.jpg'
+import Requiem from '../assets/img/Requiem.jpg'
+---
+<Layout titulo="Juegos">
+    <section>
+    <h1>Juegos de la saga</h1>
+    <p>Cronologia de las entregas principales de Resindent Evil y los incedentes biologicos de cada titulo </p>
+
+    <ul class="galeria">
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re1}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 1"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil(1996 / Remake)</h3>
+                    <p>El equipo Alpha de S.T.A.R.S. investigan desapariciones en las montañas Arklay y queda atrapado en la Mansion Spencer. </p>
+                </div>
+            </article>
+        </li>
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re2}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 2"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil 2 (1998 / 2019)</h3>
+                    <p>Leon S. Kennedy y Claire Redfield intentan escapar de la comiseria R.P.D durante el colapso de Raccoon City por el Virus-T.</p>
+                </div>
+            </article>
+        </li>
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re3}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 3"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident 3: Nemesis (1999 / 2020)</h3>
+                    <p>Jill Valentine por huir de una ciudad infectada mientras es perseguida sin descanso por el arma bio-organica Némesis.</p>
+                </div>
+            </article>
+        </li>
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re4}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 4"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil 4 (2005 / 2023)</h3>
+                    <p>Seis años despues de Raccoon City, el agente Leon S. Kennedy viaja a Europa para rescatar a la hija del presidente de EE.UU.</p>
+                </div>
+            </article>
+        </li>
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re5}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 5"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil 5 (2009)</h3>
+                    <p>Chris Redfield y Sheva Alomar investigan del parasito Las plagas y el virus Uroboros en Kijuju, Africa</p>
+                </div>
+            </article>
+        </li>
+                <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re6}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 6"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil 6 (2012)</h3>
+                    <p>Leon Kennedy, Chris Redfield y Jake Muller enfrentan ataques bioterrorostas simultáneos con el Virus-C en distintas partes del mundo.</p>
+                </div>
+            </article>
+        </li>
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Re7}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil 7: Biohazerd"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil 7: Biohazard (2017)</h3>
+                    <p>Ethan Winters busca a su esposa desaparecida en una plantacion abandonada de Luisina controlada por la por la familia Baker.</p>
+                </div>
+            </article>
+        </li>
+        <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Village}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil Village"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil Village (2021)</h3>
+                    <p>Tras una nueva tragedia, Ethan se adentra en una aldea de Europa del Este gobernada por Madre Miranda y sus cuatro señorers.</p>
+                </div>
+            </article>
+        </li>
+                <li>
+            <article class="tarjeta">
+                <Image 
+                    src={Requiem}
+                    widths={[400, 800, 1600]}
+                    alt="Resident evil Requiem"
+                />
+                <div class="tarjeta-contenido">
+                    <h3>Resident Evil Requiem (2026)</h3>
+                    <p>La novena entrega principal de la saga al horror de supervivencia con una nueva amenaza biologica </p>
+                </div>
+            </article>
+        </li>
+    </ul>
+    </section>
+    	<section id="video">
+		<h2>Trailer oficial</h2>
+		<iframe
+		 width="560"
+		 height="315"
+		 src="https://www.youtube.com/embed/Id2EaldBaWw"
+		 title="Trailer Oficial de Resident Evil 4"
+		 allowfullscreen
+		></iframe>
+	</section>
+
+</Layout>

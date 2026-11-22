@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import Portada from '../assets/img/Portada.jpg'
+import Re2 from '../assets/img/re2.jpg'
+import Re4 from '../assets/img/re4.jpg'
+import Village from '../assets/img/Village.jpg'
+import Leon from '../assets/img/Leon.jpg'
+import Jill from '../assets/img/Jill.jpg'
+import Layout from '../layouts/default.astro'
+---
+<Layout titulo="Home">
+	<section class="portada">
+		<Image
+			src={Portada}
+			sizes="(min-width: 62rem) 60rem, 100vw"
+			widths={[400, 800, 1600]}
+			loading="eager"
+			alt="Comisaria de Raccon City bajo la lluvia"
+		/>
+		<div class="portada-texto">
+			<h1>Sobrevive al horror biologico</h1>
+			<p>El miedo es la unica señal de que sigues con vida dentro de Raccon City. </p>
+		</div>
+	</section>
+
+	<section>
+		<h2>Entregas destacadas</h2>
+		<ul class="galeria">
+			<li>
+				<article class="tarjeta">
+					<Image
+						src={Re2}
+						widths={[400, 800, 1600]}
+						alt="Leon S. Kennedy y Claire Redfield en Resident Evil 2"
+					/>
+					<div class="tarjeta-contenido">
+						<h3>Resident Evil 2</h3>
+						<p>El brote del Virus-T consume Raccoon City en septiembre de 1998.</p>
+						<a href="/juegos">Ver entregas</a>
+					</div>
+				</article>
+			</li>
+			<li>
+				<article class="tarjeta">
+					<Image
+						src={Re4}
+						sizes="(min-width: 62rem) 19rem, (min-width: 36rem) 50vw, 100vw"
+						widths={[400, 800, 1600]}
+						alt="Leon S. Kennedy en Resident Evil 4"
+					/>
+					<div class="tarjeta-contenido">
+						<h3>Resident Evil 4</h3>
+						<p>Mision de rescate en Europa frente a la amenaza de las Plagas.</p>
+						<a href="/juegos">Ver entregas</a>
+					</div>
+				</article>
+			</li>
+			<li>
+				<article class="tarjeta">
+					<Image
+						src={Village}
+						sizes="(min-width: 62rem) 19rem, (min-width: 36rem) 50vw, 100vw"
+						widths={[400, 800, 1600]}
+						alt="Castillo Dimitrescu en Resident Evil Village"
+					/>
+					<div class="tarjeta-contenido">
+						<h3>Resident Evil Village</h3>
+						<p>Ethan Winters enfrenta los secretos del Megamiceto en una aladea aislada.</p>
+						<a href="/juegos">Ver entregas</a>
+					</div>
+				</article>
+			</li>
+		</ul>
+	</section>
+    <section id="video">
+		<h2>Trailer oficial De Pelicula</h2>
+        <p>Nuestro Juego tambien tiene una pelicula</p>
+		<iframe
+		 width="560"
+		 height="315"
+		 src="https://www.youtube.com/embed/SJPu1spHqfk"
+		 title="Trailer Oficial de Resident Evil La pelicula"
+		 allowfullscreen
+		></iframe>
+	</section>
+</Layout>

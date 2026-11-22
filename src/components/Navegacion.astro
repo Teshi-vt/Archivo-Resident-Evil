@@ -1,0 +1,63 @@
+<header class="cabecera">
+    <div class="cabecera-contenido">
+        <a class="logo" href="/">Archivo Resident Evil</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/quienes-somos">Quienes somos</a></li>
+                <li><a href="/juegos">Juegos</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<style>
+    .cabecera {
+        position: sticky;
+        top:0;
+        z-index: 100;
+        color: rgb(0, 0, 0);
+        background: var(--color-primario);
+        border-bottom: 2px solid var(--color-acento);
+    }
+    .cabecera-contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: min(100% - 2rem, 60rem);
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    .logo {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.35rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .menu {
+        display: none;
+        gap: 1.25rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+    .menu a:hover{
+        text-decoration: underline;
+    }
+    @media (min-width: 40rem){
+        .cabecera-contenido{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .menu{
+            display: flex;
+        }
+    }
+</style>

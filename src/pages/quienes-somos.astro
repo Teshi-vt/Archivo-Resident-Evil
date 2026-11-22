@@ -1,0 +1,52 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/default.astro'
+import Leon from '../assets/img/Leon.jpg'
+import Jill from '../assets/img/Jill.jpg'
+---
+
+<Layout titulo="Nosotros">
+	<h1>¿Quiénes somos?</h1>
+	<p>
+		Somos un Archivo digital dedicado a recopilar la cronologia oficial, personajes e incidentes biologicos de la saga de Resident Evil desde 1996.
+	</p>
+	<p>
+		Toda la informacion esta organizada por entregas y expedientes de agentes de S.T.A.R.S. y la B.S.A.A.
+	</p>
+	<ul class="galeria">
+		<li>
+			<article class="tarjeta">
+				<Image 
+				      src={Leon}
+					  sizes="(min-width: 62rem) 29rem, 100vw"
+					  widths={[400, 800, 1600]}
+					  alt="Leon Scott Kennedy"
+				/>
+				<div class="tarjeta-contenido">
+					<h2>Leon Scott Kennedy</h2>
+					<p>Superviviente de Raccoon City y agente especial de D.S.O Especializado en operaciones de rescate</p>
+				</div>
+			</article>
+		</li>
+		<li>
+			<article class="tarjeta">
+				<Image 
+				      src={Jill}
+					  sizes="(min-width: 62rem) 29rem, 100vw"
+					  widths={[400, 800, 1600]}
+					  alt="Jill Valentine"
+				/>
+				<div class="tarjeta-contenido">
+					<h2>Jill Valentine</h2>
+					<p>Exmiembro del Equipo Alpha de S.T.AR.S., experta en infiltración y confundadora de alianza B.S.A.A.</p>
+				</div>
+			</article>
+		</li>
+
+	</ul>
+	<h2>Contacto</h2>
+	<ul>
+		<li>Correo: <a href="mailto:archivo@residentevil.example">archivo@residentevil.example</a></li>
+		<li>Frecuencia S.T.A.R.S: Canal 43.21 MHz</li>
+	</ul>
+</Layout>
